@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 # The text of the README file
 with open('README.md') as readme_file:
@@ -12,6 +12,7 @@ setup(
     version="0.1.0",
     description="Experiment on the Generative Pretrained Transformer 2 (GPT-2) for Language Modeling task using the PyTorch-Transformers library."
     long_description=README,
+    long_description_content_type="text/markdown",
     url="https://github.com/rdgozum/Next-Word-Prediction",
     author="Ryan Paul Gozum",
     author_email="ryanpaul.gozum@gmail.com",
@@ -24,8 +25,11 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
    ],
-   keywords=["language model"]
-   packages=["next_word_prediction"],
-   include_package_data=True,
-   install_requires=["numpy, pytorch-transformers, torch"]
+   keywords=["language model"],
+   packages=find_packages(),
+   install_requires=[],
+   package_data={}, # Optional
+   data_files=[], # Optional
+   entry_points={}, # Optional
+   project_urls={}, # Optional
 )
