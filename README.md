@@ -1,7 +1,8 @@
 # Next Word Prediction
-Experiment on the Generative Pretrained Transformer 2 (GPT-2) for Language Modeling task using the PyTorch-Transformers library.
+Generative Pretrained Transformer 2 (GPT-2) for Language Modeling using the PyTorch-Transformers library.
 
 ## Installation
+Requires python>=3.5, pytorch>=1.6.0, pytorch-transformers>=1.2.0
 ```bash
 pip install next-word-prediction
 ```
