@@ -16,8 +16,7 @@ def app():
 
     st.title("Next Word Prediction Using GPT-2")
 
-    left_column, right_column = st.beta_columns(2)
-    text = left_column.text_input("Input a sentence:")
+    text = st.text_input("Input a sentence:")
     topk = st.slider("Display Number", 1, 10, 5)
     if text:
         with st.spinner("Wait for it..."):
