@@ -17,6 +17,7 @@ s3transfer==0.3.3
 sacremoses==0.0.43
 sentencepiece==0.1.92
 six==1.15.0
+streamlit==0.69.0
 torch==1.6.0
 tqdm==4.48.2
 urllib3==1.25.10

@@ -9,7 +9,7 @@ def run():
         try:
             text = input("> ")
             # Encode a text input
-            prediction = gpt2.predict_next(text)
+            prediction = gpt2.predict_next(text, 5)
 
             print("{} {}".format(text, prediction))
 

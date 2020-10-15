@@ -12,6 +12,12 @@ pip install next-word-prediction
 >>> from next_word_prediction import GPT2
 >>> gpt2 = GPT2()
 >>> text = "The course starts next"
->>> gpt2.predict_next(text)
+>>> gpt2.predict_next(text, 5)
 The course starts next ['week', 'to', 'month', 'year', 'Monday']
+```
+
+## Demo via Streamlit
+
+```bash
+streamlit run app/run.py
 ```

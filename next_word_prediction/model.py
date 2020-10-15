@@ -17,7 +17,7 @@ class GPT2:
         # Load pre-trained model (weights)
         self.model = GPT2LMHeadModel.from_pretrained("gpt2")
 
-    def predict_next(self, text):
+    def predict_next(self, text, k):
         # Encode a text inputs
         indexed_tokens = self.tokenizer.encode(text)
 
@@ -38,6 +38,6 @@ class GPT2:
 
         # Get the predicted next sub-word
         probs = predictions[0, -1, :]
-        top_next = [self.tokenizer.decode(i.item()).strip() for i in probs.topk(5)[1]]
+        top_next = [self.tokenizer.decode(i.item()).strip() for i in probs.topk(k)[1]]
 
         return top_next
